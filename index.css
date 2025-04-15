@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e7f3e9;
+  font-family: "Bayon", sans-serif;
+  font-style: normal;
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px;
+}
+
+.header {
+  margin-bottom: 5px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.english-date,
+.khmer-date {
+  color: #4f4f4f;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+main {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar-container {
+  flex: 3;
+}
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar th {
+  background-color: #01a701;
+  border: white 1px solid;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px;
+  width: 100px;
+}
+
+.calendar td {
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+  text-align: center;
+  height: 80px;
+  vertical-align: top;
+  position: relative;
+}
+
+.date {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.lunar-date {
+  color: #898989;
+  font-size: 0.8rem;
+}
+
+.blue {
+  color: #0059b2;
+}
+
+.last-month,
+.next-month {
+  background-color: #eeeeee;
+  color: #bebcbc;
+}
+
+.buddha-day {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 3px;
+}
+
+.hover-day:hover {
+  background-color: #d8fafe65;
+  cursor: pointer;
+}
+
+.events-container {
+  flex: 1;
+  border-radius: 0 8px;
+  padding: 15px;
+}
+
+.events-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 5px;
+  border-left: 4px solid #1e40af;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.event-red {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  border-left: 4px solid red;
+  flex: 1 1 30%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02);
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.special,
+.lunar-date {
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  color: #7d7b7b;
+  margin-top: 10px;
+  padding: 10px;
+}
